@@ -18,3 +18,13 @@ class BST:
         else:
             self.data=number
     def search(self,number):
+        if self.data == number:
+            return True
+        if number < self.data:
+            if self.left_node == None:
+                return False
+            return self.left_node.search(number)
+        if number > self.data:
+            if self.right_node == None:
+                return False
+            return self.right_node.search(number)
