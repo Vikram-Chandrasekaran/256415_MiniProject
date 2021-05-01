@@ -5,7 +5,7 @@ class Stack:
         self.elements.append(number)
         print(str(number)+" is pushed successfully")
     def pop(self):
-        popped_element = self.elements.pop())
+        popped_element = self.elements.pop()
         print(str(popped_element)+" is popped successfully")
     def size(self):
         print("The number of elements in the stack is "+str(len(self.elements)))
